@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
     <title>Zapatos para todos</title>
+    <link rel="stylesheet" href="css/estilo.css"/>
 </head>
 <body>
     <header>
@@ -22,28 +23,28 @@
     <br/>
     <main>
         <center><h1>PRIMER FORMULARIO</h1></center>
-
         <center><form>
-            <label>Nombre</label>
+            <label for="nombre">Nombre</label>
             <br/>
-            <input type="text" name="txtnombre"></input>
+            <input id="nombre" type="text" name="txtnombre"></input>
             <br/>
-            <label>Email</label>
+            <label for="Email">Email</label>
             <br/>
-            <input type="email" name="txtemail"></input>
+            <input id="Email" type="email" name="txtemail"></input>
             <br/>
-            <label>Fecha</label>
+            <label for="Fecha" >Fecha</label>
             <br/>
-            <input type="date" name="txtfecha"></input>
+            <input id="Fecha" type="date" name="txtfecha"></input>
             <br/>
-            <label>Celular</label>
+            <label for="Celular">Celular</label>
             <br/>
-            <input type="tel" name="txtcelular" min="9999999999 " max="99999999999"></input>
+            <input id="Celular" type="tel" name="txtcelular" min="9999999999 " max="99999999999"></input>
             <br/>
             <input type="submit" value="Guardar">
             <br />
-            <label><h3>Ingresar modelo:</h3></label>
-            <select name="Tipos de Zapatos">
+            <label for="Modelo"><h3>Ingresar modelo:</h3></label>
+            <select id="Modelo" name="Tipos de Zapatos">
+                <option value="0" >Seleccionar</option>
                 <option value="1" >Deportivos</option>
                 <option value="2" >Clasicos</option>
                 <option value="3" >Botas</option>
@@ -51,6 +52,33 @@
                 <option value="5" >Sandalias</option>
             </select>
             <br/>
+            <br/>
+            <br/>
+            <textarea name="Observaciónes" rows="5" cols="40">
+                
+            </textarea>
+            <br/>
+            <center>
+            <h2>INVENTARIO</h2>
+            <table border="2">
+                <tr>
+                    <th></th>
+                    <th>Deportivos</th>
+                    <th>Clasicos</th>
+                    <th>Botas</th>
+                    <th>Tacones</th>
+                    <th>Sandalias</th>
+                </tr>
+                <tr>
+                    <td>Cantidades</td>
+                    <td><center>50</center></td>
+                    <td><center>75</center></td>
+                    <td><center>25</center></td>
+                    <td><center>40</center></td>
+                    <td><center>87</center></td>
+                </tr>
+            </table>
+            </center>
         </form></center>
         <br/>
         <center><a href="Untitled-1.html"><button>siguiente</button></a></center>       
